@@ -9,7 +9,7 @@
     <string name="toast_msg_saved_game">Recuperando datos guardados</string>
     <string name="toast_msg_score">Ha respondido %1$d de 4 preguntas correctamente. Su puntuación es %2$d%%. Es posible que haga clic en el botón para volver a intentarlo.</string>
     <string name="final_submit_button">Enviar</string>
-    <string name="quiz_results_header">"Cuestionario Score "</string>
+    <string name="quiz_results_header">"Puntaje de Prueba"</string>
     <string name="results_text">"Resultados del concurso "</string>
     <string name="three_wrong">"Se ha perdido 3 preguntas y obtuvo el 25%, lo que significa que probablemente no puede ayudar a Kenny con su tarea! ¿Conoce a alguien en el sexto grado que puede ayudar? "</string>
     <string name="quiz_start_over">Comenzar de Nuevo</string>
