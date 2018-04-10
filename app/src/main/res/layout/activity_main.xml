@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_5bg"
+    tools:context="com.example.android.quizzed.MainActivity">
+
+    <TextView
+        android:id="@+id/heading_text"
+        style="@style/intro_title"
+        android:background="@color/primaryColor"
+        android:text="@string/app_nickname"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/question_graphic_pic"
+        style="@style/question_graphic"
+        android:contentDescription="@string/question_pic_descrip"
+        android:scaleType="fitXY"
+        android:src="@drawable/mountains"
+        android:visibility="gone" />
+
+    <!--Intro View (Screen 0 Portrait Mode)-->
+    <LinearLayout
+        android:id="@+id/intro_page_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/heading_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:targetApi="21">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="@string/intro_pic_descrip"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/boyworried" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="8dp"
+            android:onClick="startQuiz"
+            android:padding="10dp"
+            android:text="@string/intro_button"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!--Question 1 with radio buttons (Screen 1)-->
+    <ScrollView
+        android:id="@+id/question_1"
+        style="@style/scroll_view_style"
+        android:layout_marginBottom="40dp"
+        android:visibility="gone">
+
+        <LinearLayout style="@style/linear_layout_view_style">
+
+            <TextView
+                style="@style/question_header"
+                android:text="@string/question_1_head" />
+
+            <TextView
+                style="@style/question_content"
+                android:text="@string/question_1_text" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/question_1_a"
+                    style="@style/radio_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickQuestionOne"
+                    android:paddingLeft="20dp"
+                    android:text="@string/question_1_a" />
+
+                <RadioButton
+                    android:id="@+id/question_1_b"
+                    style="@style/radio_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickQuestionOne"
+                    android:paddingLeft="20dp"
+                    android:text="@string/question_1_b" />
+
+                <RadioButton
+                    android:id="@+id/question_1_c"
+                    style="@style/radio_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickQuestionOne"
+                    android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
+                    android:text="@string/question_1_c" />
+
+                <RadioButton
+                    android:id="@+id/question_1_d"
+                    style="@style/radio_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickQuestionOne"
+                    android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
+                    android:text="@string/question_1_d" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--Question 2 with checkboxes (Screen 2 Portrait Mode)-->
+    <ScrollView
+        android:id="@+id/question_2"
+        style="@style/scroll_view_style"
+        android:layout_marginBottom="40dp"
+        android:visibility="visible">
+
+        <LinearLayout style="@style/linear_layout_view_style">
+
+            <TextView
+                style="@style/question_header"
+                android:text="@string/question_2_head" />
+
+            <TextView
+                style="@style/question_content"
+                android:text="@string/question_2_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <CheckBox
+                    android:id="@+id/question_2_a"
+                    style="@style/checkbox_style"
+                    android:onClick="onClickBoxQuestion2"
+                    android:text="@string/question_2_a" />
+
+                <CheckBox
+                    android:id="@+id/question_2_b"
+                    style="@style/checkbox_style"
+                    android:onClick="onClickBoxQuestion2"
+                    android:text="@string/question_2_b" />
+
+                <CheckBox
+                    android:id="@+id/question_2_c"
+                    style="@style/checkbox_style"
+                    android:onClick="onClickBoxQuestion2"
+                    android:text="@string/question_2_c" />
+
+                <CheckBox
+                    android:id="@+id/question_2_d"
+                    style="@style/checkbox_style"
+                    android:onClick="onClickBoxQuestion2"
+                    android:text="@string/question_2_d" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/secondaryDarkColor"
+                android:onClick="onSubmitQuestionTwo"
+                android:padding="10dp"
+                android:text="@string/next_button"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--Question 3 with radio button pictures (Screen 3 Portrait Mode)-->
+    <ScrollView
+        android:id="@+id/question_3"
+        style="@style/scroll_view_style"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+
+        <LinearLayout style="@style/linear_layout_view_style">
+
+            <TextView
+                style="@style/question_header"
+                android:text="@string/question_3_head" />
+
+            <TextView
+                style="@style/question_content"
+                android:text="@string/question_3_text" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:elevation="3dp"
+                android:gravity="center"
+                tools:targetApi="21">
+
+                <RadioButton
+                    android:id="@+id/shape_A_radio"
+                    style="@style/q3_radio_style"
+                    android:drawableBottom="@drawable/hexagon128"
+                    android:onClick="onClickShapeRadioButton"
+                    android:text="@string/question_3_a" />
+
+                <RadioButton
+                    android:id="@+id/shape_B_radio"
+                    style="@style/q3_radio_style"
+                    android:drawableBottom="@drawable/pentagon128"
+                    android:onClick="onClickShapeRadioButton"
+                    android:paddingBottom="30dp"
+                    android:text="@string/question_3_b" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--Question 4 with Edit Text Field (Screen 4 Portrait Mode)-->
+    <ScrollView
+        android:id="@+id/question_4"
+        style="@style/scroll_view_style"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            style="@style/linear_layout_view_style"
+            android:elevation="5dp"
+            android:paddingBottom="30dp"
+            tools:targetApi="21">
+
+            <TextView
+                style="@style/question_header"
+                android:text="@string/question_4_head" />
+
+            <TextView
+                style="@style/question_content"
+                android:text="@string/question_4_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/question_content_et"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="3dp"
+                    android:paddingStart="15dp"
+                    android:text="@string/question_4_preBlank" />
+
+                <EditText
+                    android:id="@+id/ques_4_edit_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/question_4_hint"
+                    android:inputType="number"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="15dp"
+                    android:shadowColor="@color/primaryColor"
+                    android:textColor="@color/secondaryColor"
+                    android:textColorHint="@color/primaryColor" />
+
+                <TextView
+                    style="@style/question_content_et"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/question_4_postBlank" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/secondaryDarkColor"
+                android:onClick="finalSubmitPress"
+                android:padding="10dp"
+                android:text="@string/final_submit_button" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--Quiz Results (Screen 5 Portrait Mode)-->
+    <ScrollView
+        android:id="@+id/quiz_score"
+        style="@style/scroll_view_style"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            style="@style/linear_layout_view_style"
+            android:paddingBottom="0dp">
+
+            <TextView
+                style="@style/question_header"
+                android:text="@string/quiz_results_header" />
+
+            <TextView
+                android:id="@+id/score_text_view"
+                style="@style/score"
+                android:text="@string/score_text" />
+
+            <TextView
+                android:id="@+id/quiz_results_comment"
+                style="@style/score_analysis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/results_text" />
+
+            <ImageView
+                android:id="@+id/boy_results_screen"
+                style="@style/boy_results_view_style"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/results_pic_descrip"
+                android:src="@drawable/boysmiling"
+                android:visibility="visible" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/secondaryDarkColor"
+                android:onClick="startOver"
+                android:padding="10dp"
+                android:text="@string/quiz_start_over"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/teacher_left_side"
+        style="@style/rv_teacher_left_corner"
+        android:contentDescription="@string/question_pic_descrip"
+        android:elevation="10dp"
+        android:padding="0dp"
+        android:src="@drawable/teacher3"
+        android:visibility="gone"
+        tools:targetApi="21" />
+</RelativeLayout>

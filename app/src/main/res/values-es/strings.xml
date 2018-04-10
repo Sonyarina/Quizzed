@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ayuda con las Tareas</string>
+    <string name="app_nickname">Ayuda con las Tareas</string>
+    <string name="intro_button">Comienzo</string>
+    <string name="next_button">Siguiente</string>
+    <string name="toast_msg_new_game">"Nueva Sesión "</string>
+    <string name="score_text">%X</string>
+    <string name="toast_msg_saved_game">Recuperando datos guardados</string>
+    <string name="toast_msg_score">Ha respondido %1$d de 4 preguntas correctamente. Su puntuación es %2$d%%. Es posible que haga clic en el botón para volver a intentarlo.</string>
+    <string name="final_submit_button">Enviar</string>
+    <string name="quiz_results_header">"Cuestionario Score "</string>
+    <string name="results_text">"Resultados del concurso "</string>
+    <string name="three_wrong">"Se ha perdido 3 preguntas y obtuvo el 25%, lo que significa que probablemente no puede ayudar a Kenny con su tarea! ¿Conoce a alguien en el sexto grado que puede ayudar? "</string>
+    <string name="quiz_start_over">Comenzar de Nuevo</string>
+    <string name="perfect_score">¡Felicitaciones! Su puntaje es 100! Usted es 100% calificado para ayudar a Kenny con su tarea!</string>
+    <string name="zero_score">"Esto es incómodo, pero se marcó 0%. Usted no está calificado para ayudar a Kenny con su tarea! Tal vez usted debe contratar a un tutor para los dos? "</string>
+    <string name="fifty_percent_score">Tienes la mitad de las preguntas equivocadas. Por desgracia, no será de mucha ayuda a Kenny. ¿Hay un tutor puede llamar?</string>
+    <string name="seventy_five_percent">Se ha perdido una sola pregunta, y su puntuación es de 75%. Puede ayudar a Kenny con su tarea, pero se debe verificar su trabajo antes de entregarlo.</string>
+    <string name="intro_pic_descrip">Muchacho preocupante</string>
+    <string name="question_pic_descrip">Imagen descriptiva Relacionado a la</string>
+    <string name="results_pic_descrip">Boy En reacción a la prueba Puntaje</string>
+    <string name="question_1_head">Pregunta 1</string>
+    <string name="question_1_text">Markie puede correr 4 millas en una hora. ¿Cuánto tiempo se tarda Markie a correr 18 millas?</string>
+    <string name="question_1_a">2.5 horas</string>
+    <string name="question_1_b">3.5 horas</string>
+    <string name="question_1_c">4.5 horas</string>
+    <string name="question_1_d">6.5 horas</string>
+    <string name="question_2_head">Pregunta 2</string>
+    <string name="question_3_head">Pregunta 3</string>
+    <string name="question_4_head">Pregunta 4</string>
+    <string name="question_2_text">¿Cuál de los siguientes metales han ayudado en el avance de la humanidad? Marque todo lo que corresponda.</string>
+    <string name="question_2_a">Kryptonite</string>
+    <string name="question_2_b">Cobre</string>
+    <string name="question_2_c">Vibranium</string>
+    <string name="question_2_d">Hierro</string>
+    <string name="question_3_text">¿Cuál de las figuras de abajo es un hexágono? Haga clic en la forma correcta de proceder a la siguiente pregunta.</string>
+    <string name="question_3_a">Forma 1</string>
+    <string name="question_3_b">Forma 2</string>
+    <string name="question_4_text">¿Qué edad debe tener una persona para convertirse en un Senador de los Estados Unidos? Escriba su respuesta en el campo de abajo y pulse el botón Enviar para calcular su puntuación.</string>
+    <string name="question_4_hint">\??</string>
+    <string name="question_4_preBlank">Al menos</string>
+    <string name="question_4_postBlank">años.</string>
+</resources>

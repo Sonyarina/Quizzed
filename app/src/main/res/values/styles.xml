@@ -1,0 +1,239 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/secondaryColor</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">@color/secondaryColor</item>
+        <item name="android:colorMultiSelectHighlight">@color/secondaryColor</item>
+    </style>
+
+    <style name="intro_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily" tools:targetApi="16">sans-serif</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="question_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment" tools:targetApi="17">center</item>
+        <item name="android:background">@color/secondaryDarkColor</item>
+        <item name="android:elevation" tools:targetApi="21">5dp</item>
+    </style>
+
+    <style name="question_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#fff</item>
+        <item name="android:textColor">@color/secondaryColor</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:elevation" tools:targetApi="21">3dp</item>
+    </style>
+
+    <style name="question_content_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/secondaryColor</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="question_content_et">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+
+    <style name="score">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#fff</item>
+        <item name="android:textColor">@color/secondaryColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">25dp</item>
+        <item name="android:elevation" tools:targetApi="21">3dp</item>
+
+    </style>
+
+    <style name="score_analysis">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="boy_results_view_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="boy_results_view_style_landscape">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="rv_teacher_left_corner">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_marginTop">250dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:elevation" tools:targetApi="21">5dp</item>
+    </style>
+
+    <style name="rv_teacher_left_corner_landscape">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:elevation" tools:targetApi="21">5dp</item>
+    </style>
+
+    <style name="question_graphic">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="question_graphic_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="radio_item_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+    <style name="radio_item_style_landscape">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:buttonTint" tools:targetApi="21">@color/primaryTextColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+    <style name="checkbox_style" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="colorControlNormal">@color/primaryColor</item>
+        <item name="colorControlActivated">@color/secondaryDarkColor</item>
+        <item name="android:colorActivatedHighlight">@color/secondaryDarkColor</item>
+        <item name="android:colorBackground">@color/primaryLightColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="checkbox_style_landscape" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="colorControlNormal">@color/primaryColor</item>
+        <item name="colorControlActivated">@color/secondaryDarkColor</item>
+        <item name="android:colorActivatedHighlight">@color/secondaryDarkColor</item>
+        <item name="android:buttonTint" tools:targetApi="21">@color/primaryTextColor</item>
+        <item name="android:colorBackground">@color/primaryLightColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="q3_radio_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:elevation" tools:targetApi="21">3dp</item>
+        <item name="android:buttonTint" tools:targetApi="21">#00FFFFFF</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingStart" tools:targetApi="17">0dp</item>
+        <item name="android:paddingEnd" tools:targetApi="17">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="scroll_view_style">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:fillViewport">true</item>
+    </style>
+
+    <style name="scroll_view_style_landscape">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:fillViewport">true</item>
+        <item name="android:scrollIndicators" tools:targetApi="23">right</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="linear_layout_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="linear_layout_view_style_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+</resources>
