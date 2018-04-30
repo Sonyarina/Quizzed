@@ -5,8 +5,9 @@ Created for Udacity Android Basics course.
 This app meets the requirements of Project 3 as outlined in the rubric. 
 
 The cartoon avatars used in this app were obtained from freepik.com.
+![alt text](portrait-english.png "Side by side Screenshots of App in Portrait Mode")
 
-App Screenshots
+More App Screenshots
 https://photos.app.goo.gl/G2SMdOss91Mn6FyA2
 
 Github
