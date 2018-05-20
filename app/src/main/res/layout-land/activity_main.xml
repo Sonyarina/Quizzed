@@ -7,6 +7,9 @@
     android:background="@drawable/app_5bg"
     tools:context="com.example.android.quizzed.MainActivity">
 
+    <!--Media License Info: Cartoon Graphics were obtained from freepik.com,
+    Shapes were obtained from flaticon.com -->
+
     <TextView
         android:id="@+id/heading_text"
         style="@style/intro_title"
@@ -22,18 +25,18 @@
         android:src="@drawable/mountains"
         android:visibility="gone" />
 
-    <!--Intro View (Screen 0)-->
+    <!--Intro View (Screen 0) Landscape-->
     <LinearLayout
         android:id="@+id/intro_page_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/heading_text"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="20dp"
-        android:elevation="5dp"
+        android:layout_marginBottom="@dimen/intro_view_marginBottom"
+        android:layout_marginLeft="@dimen/intro_view_marginLeft"
+        android:layout_marginRight="@dimen/intro_view_marginRight"
+        android:layout_marginTop="@dimen/intro_view_marginTop"
+        android:elevation="@dimen/intro_view_elevation"
         android:orientation="vertical"
         android:visibility="gone"
         tools:targetApi="21">
@@ -44,22 +47,22 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:contentDescription="@string/intro_pic_descrip"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
+            android:paddingLeft="@dimen/intro_view_pic_paddingLeft"
+            android:paddingRight="@dimen/intro_view_pic_paddingRight"
             android:src="@drawable/boyworried" />
 
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="48dp"
+            android:layout_height="@dimen/intro_view_btn_height"
             android:layout_gravity="center"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="45dp"
-            android:layout_marginRight="45dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/intro_view_btn_marginBottom"
+            android:layout_marginLeft="@dimen/intro_view_btn_marginLeft"
+            android:layout_marginRight="@dimen/intro_view_btn_marginRight"
+            android:layout_marginTop="@dimen/intro_view_btn_marginTop"
             android:onClick="startQuiz"
-            android:padding="10dp"
+            android:padding="@dimen/intro_view_btn_padding"
             android:text="@string/intro_button"
-            android:textSize="18sp" />
+            android:textSize="@dimen/intro_view_btn_text_size" />
     </LinearLayout>
 
     <!--Question 1 with radio buttons (Screen 1 Landscape Mode)-->
@@ -94,8 +97,8 @@
                 <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="160dp"
-                    android:layout_marginTop="10dp">
+                    android:layout_marginLeft="@dimen/q1_radiogroup_landscape_marginLeft"
+                    android:layout_marginTop="@dimen/q1_radiogroup_landscape_marginTop">
 
                     <RadioButton
                         android:id="@+id/question_1_a"
@@ -103,7 +106,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:onClick="onClickQuestionOne"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="@dimen/q1_radiobuttons_paddingLeft"
                         android:text="@string/question_1_a" />
 
                     <RadioButton
@@ -112,7 +115,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:onClick="onClickQuestionOne"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="@dimen/q1_radiobuttons_paddingLeft"
                         android:text="@string/question_1_b" />
 
                     <RadioButton
@@ -121,8 +124,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:onClick="onClickQuestionOne"
-                        android:paddingLeft="20dp"
-                        android:paddingStart="20dp"
+                        android:paddingLeft="@dimen/q1_radiobuttons_paddingLeft"
+                        android:paddingStart="@dimen/q1_radiobuttons_paddingLeft"
                         android:text="@string/question_1_c" />
 
                     <RadioButton
@@ -131,8 +134,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:onClick="onClickQuestionOne"
-                        android:paddingLeft="20dp"
-                        android:paddingStart="20dp"
+                        android:paddingLeft="@dimen/q1_radiobuttons_paddingLeft"
+                        android:paddingStart="@dimen/q1_radiobuttons_paddingLeft"
                         android:text="@string/question_1_d" />
                 </RadioGroup>
             </LinearLayout>
@@ -172,7 +175,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:paddingLeft="15dp">
+                    android:paddingLeft="@dimen/q2_linearlayout_landscape_paddingLeft">
 
                     <CheckBox
                         android:id="@+id/question_2_a"
@@ -201,16 +204,16 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="48dp"
+                    android:layout_height="@dimen/q2_submit_btn_height"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="45dp"
-                    android:layout_marginRight="45dp"
+                    android:layout_marginBottom="@dimen/q2_submit_btn_landscape_marginBottom"
+                    android:layout_marginLeft="@dimen/q2_submit_btn_marginLeft"
+                    android:layout_marginRight="@dimen/q2_submit_btn_marginRight"
                     android:background="@color/secondaryDarkColor"
                     android:onClick="onSubmitQuestionTwo"
-                    android:padding="10dp"
+                    android:padding="@dimen/q2_submit_btn_padding"
                     android:text="@string/next_button"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/q2_submit_btn_text_size" />
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>
@@ -219,7 +222,7 @@
     <ScrollView
         android:id="@+id/question_3"
         style="@style/scroll_view_style_landscape"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="@dimen/q3_scrollview_landscape_marginBottom"
         android:visibility="gone">
 
         <LinearLayout
@@ -233,15 +236,15 @@
 
             <TextView
                 style="@style/question_content_landscape"
-                android:layout_marginEnd="60dp"
-                android:layout_marginRight="60dp"
+                android:layout_marginEnd="@dimen/q3_textview_landscape_marginRight"
+                android:layout_marginRight="@dimen/q3_textview_landscape_marginRight"
                 android:text="@string/question_3_text" />
 
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:elevation="3dp"
+                android:elevation="@dimen/q3_radiogroup_elevation"
                 android:gravity="center"
                 tools:targetApi="21">
 
@@ -257,7 +260,7 @@
                     style="@style/q3_radio_style"
                     android:drawableBottom="@drawable/pentagon128"
                     android:onClick="onClickShapeRadioButton"
-                    android:paddingBottom="30dp"
+                    android:paddingBottom="@dimen/q3_radiobutton_paddingBottom"
                     android:text="@string/question_3_b" />
             </RadioGroup>
         </LinearLayout>
@@ -283,8 +286,8 @@
             <LinearLayout
                 style="@style/linear_layout_view_style_landscape"
                 android:background="#B3FFFFFF"
-                android:elevation="5dp"
-                android:paddingBottom="30dp"
+                android:elevation="@dimen/q4_linearlayout_elevation"
+                android:paddingBottom="@dimen/q4_linearlayout_paddingBottom"
                 tools:targetApi="21">
 
                 <TextView
@@ -301,10 +304,10 @@
 
                     <TextView
                         style="@style/question_content_et"
-                        android:paddingEnd="3dp"
-                        android:paddingLeft="15dp"
-                        android:paddingRight="3dp"
-                        android:paddingStart="15dp"
+                        android:paddingEnd="@dimen/q4_textview_preblank_paddingRightEnd"
+                        android:paddingLeft="@dimen/q4_textview_preblank_paddingLeftStart"
+                        android:paddingRight="@dimen/q4_textview_preblank_paddingRightEnd"
+                        android:paddingStart="@dimen/q4_textview_preblank_paddingLeftStart"
                         android:text="@string/question_4_preBlank" />
 
                     <EditText
@@ -313,10 +316,10 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/question_4_hint"
                         android:inputType="number"
-                        android:paddingBottom="15dp"
-                        android:paddingLeft="4dp"
-                        android:paddingRight="4dp"
-                        android:paddingTop="15dp"
+                        android:paddingBottom="@dimen/q4_edittext_paddingBottom"
+                        android:paddingLeft="@dimen/q4_edittext_paddingLeft"
+                        android:paddingRight="@dimen/q4_edittext_paddingRight"
+                        android:paddingTop="@dimen/q4_edittext_paddingTop"
                         android:shadowColor="@color/primaryColor"
                         android:textColor="@color/secondaryColor"
                         android:textColorHint="@color/primaryColor" />
@@ -324,8 +327,8 @@
                     <TextView
                         style="@style/question_content_et"
                         android:layout_width="match_parent"
-                        android:paddingLeft="5dp"
-                        android:paddingStart="5dp"
+                        android:paddingLeft="@dimen/q4_textview_postblank_paddingLeftStart"
+                        android:paddingStart="@dimen/q4_textview_postblank_paddingLeftStart"
                         android:text="@string/question_4_postBlank" />
                 </LinearLayout>
 
@@ -333,14 +336,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/q4_submit_btn_marginTop"
                     android:background="@color/secondaryDarkColor"
                     android:onClick="finalSubmitPress"
-                    android:padding="10dp"
+                    android:padding="@dimen/q4_submit_btn_padding"
                     android:text="@string/final_submit_button" />
             </LinearLayout>
-
-
         </RelativeLayout>
     </ScrollView>
 
@@ -348,13 +349,13 @@
     <ScrollView
         android:id="@+id/quiz_score"
         style="@style/scroll_view_style_landscape"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="@dimen/results_scrollview_marginBottom"
         android:visibility="gone">
 
         <LinearLayout
             style="@style/linear_layout_view_style_landscape"
             android:layout_height="wrap_content"
-            android:paddingBottom="0dp">
+            android:paddingBottom="@dimen/results_linearlayout_paddingBottom">
 
             <TextView
                 style="@style/question_header"
@@ -382,15 +383,15 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
+                android:layout_height="@dimen/results_submit_btn_height"
                 android:layout_gravity="center"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginBottom="@dimen/results_submit_btn_marginBottom"
+                android:layout_marginTop="@dimen/results_submit_btn_marginTop"
                 android:background="@color/secondaryDarkColor"
                 android:onClick="startOver"
-                android:padding="10dp"
+                android:padding="@dimen/results_submit_btn_padding"
                 android:text="@string/quiz_start_over"
-                android:textSize="18sp" />
+                android:textSize="@dimen/results_submit_btn_text" />
         </LinearLayout>
     </ScrollView>
 
@@ -398,8 +399,8 @@
         android:id="@+id/teacher_left_side"
         style="@style/rv_teacher_left_corner_landscape"
         android:contentDescription="@string/question_pic_descrip"
-        android:elevation="10dp"
-        android:padding="0dp"
+        android:elevation="@dimen/teacher_elevation"
+        android:padding="@dimen/teacher_padding"
         android:src="@drawable/teacher3"
         android:visibility="gone"
         tools:targetApi="21" />

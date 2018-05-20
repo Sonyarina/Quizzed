@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
     //This variable will keep track of activity layout orientation
     boolean isLandscapeMode;
 
-    //Thevariable will store information pertaining to the drawables that are used in the ImageViews in Portrait Mode
+    //The variable will store information pertaining to the drawables that are used in the ImageViews in Portrait Mode
     private int boyImageID = R.drawable.boysmiling;
     private int questionGraphicID = R.drawable.man_running;
     private int backgroundImageID = R.drawable.app_5bg;
@@ -129,8 +129,6 @@ public class MainActivity extends AppCompatActivity {
         isLandscapeMode = res.getBoolean(R.bool.is_landscape);
         if (!isLandscapeMode) {
             questionGraphicView = findViewById(R.id.question_graphic_pic);
-        }
-        if (isLandscapeMode) {
         }
 
         //Calls method to hide all views
@@ -254,9 +252,10 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * This method selects which layout view to show based on the currentScreen variable
+     *
      * @param page is based on the currentScreen variable, which determines which layout view "page" to show
-     * Example: Page 0 is the intro Page, Page 1 is Question 1, Page 2 is Question 1, Page 3 is Question 3,
-     * Page 4 is Question 4, Page 5 is the Quiz Score page
+     *             Example: Page 0 is the intro Page, Page 1 is Question 1, Page 2 is Question 1, Page 3 is Question 3,
+     *             Page 4 is Question 4, Page 5 is the Quiz Score page
      */
     public void selectViewLayout(int page) {
         //Hide all view before selecting the new view
@@ -500,6 +499,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is called when the user checks any of
      * the CheckBox button field on Question 2
+     *
      * @param view is the CheckBox button view that was clicked
      **/
     public void onClickBoxQuestion2(View view) {
@@ -618,14 +618,11 @@ public class MainActivity extends AppCompatActivity {
         //check if EditText view was empty, if it is, set response to default
         if (TextUtils.isEmpty(answerFourText)) {
 
-            //Toast.makeText(MainActivity.this, "EditText is Empty", Toast.LENGTH_SHORT).show();
             answerFourText = "";
-
-        } else {
-            //Toast.makeText(MainActivity.this, "EditText is Not Empty", Toast.LENGTH_SHORT).show();
         }
 
         //Remove window focus to hide keyboard
+        //Code snippet to hide keyboard obtained from stackoverflow.com
         View focus = this.getCurrentFocus();
         if (focus != null) {
             InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -721,6 +718,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * This method is called when the user presses the "Start Over" button to restart the quiz
+     * Guidance for creating method and code snippet obtained from stackoverflow.com
      *
      * @param view is the button view that was clicked
      **/

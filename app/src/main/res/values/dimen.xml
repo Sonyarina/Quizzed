@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Intro View LinearLayout Mode  -->
+    <dimen name="intro_view_marginBottom">10dp</dimen>
+    <dimen name="intro_view_marginTop">20dp</dimen>
+    <dimen name="intro_view_marginRight">30dp</dimen>
+    <dimen name="intro_view_marginLeft">30dp</dimen>
+    <dimen name="intro_view_elevation">5dp</dimen>
+
+    <!--Intro View Picture Mode  -->
+    <dimen name="intro_view_pic_height">0dp</dimen>
+    <dimen name="intro_view_pic_layout_weight">1</dimen>
+    <dimen name="intro_view_pic_paddingLeft">10dp</dimen>
+    <dimen name="intro_view_pic_paddingRight">10dp</dimen>
+
+    <!--Intro View Start Button Mode  -->
+    <dimen name="intro_view_btn_height">48dp</dimen>
+    <dimen name="intro_view_btn_marginBottom">5dp</dimen>
+    <dimen name="intro_view_btn_marginLeft">45dp</dimen>
+    <dimen name="intro_view_btn_marginRight">45dp</dimen>
+    <dimen name="intro_view_btn_marginTop">8dp</dimen>
+    <dimen name="intro_view_btn_padding">10dp</dimen>
+    <dimen name="intro_view_btn_text_size">18sp</dimen>
+
+    <!--Question 1 and 2 ScrollView Portrait Mode  -->
+    <dimen name="q1_and_q2_scrollview_portrait_marginBottom">40dp</dimen>
+
+    <!--Question 1 RadioGroup Portrait Mode  -->
+    <dimen name="q1_radiogroup_portrait_marginTop">10dp</dimen>
+
+    <!--Question 1 RadioGroup Landscape Mode  -->
+    <dimen name="q1_radiogroup_landscape_marginTop">10dp</dimen>
+    <dimen name="q1_radiogroup_landscape_marginLeft">160dp</dimen>
+
+
+    <!--Question 1 RadioButtons Mode  -->
+    <dimen name="q1_radiobuttons_paddingLeft">20dp</dimen>
+
+    <!--Question 2 LinearLayout containing CheckBox Views Portrait Mode  -->
+    <dimen name="q2_linearlayout_portrait_padding">15dp</dimen>
+
+    <!--Question 2 LinearLayout containing CheckBox Views Landscape Mode  -->
+    <dimen name="q2_linearlayout_landscape_paddingLeft">15dp</dimen>
+
+    <!--Question 2 Submit Button Mode  -->
+    <dimen name="q2_submit_btn_padding">10dp</dimen>
+    <dimen name="q2_submit_btn_height">48dp</dimen>
+    <dimen name="q2_submit_btn_marginTop">20dp</dimen>
+    <dimen name="q2_submit_btn_marginLeft">45dp</dimen>
+    <dimen name="q2_submit_btn_marginRight">45dp</dimen>
+    <dimen name="q2_submit_btn_text_size">18sp</dimen>
+    <dimen name="q2_submit_btn_portrait_marginBottom">20dp</dimen>
+    <dimen name="q2_submit_btn_landscape_marginBottom">5dp</dimen>
+
+    <!--Question 3 ScrollView Portrait Mode  -->
+    <dimen name="q3_scrollview_portrait_marginBottom">5dp</dimen>
+
+    <!--Question 3 ScrollView Landscape Mode  -->
+    <dimen name="q3_scrollview_landscape_marginBottom">10dp</dimen>
+
+    <!--Question 3 TextView Landscape Mode  -->
+    <dimen name="q3_textview_landscape_marginRight">60dp</dimen>
+
+    <!--Question 3 RadioGroup Mode  -->
+    <dimen name="q3_radiogroup_elevation">3dp</dimen>
+
+    <!--Question 3 RadioButtons Mode  -->
+    <dimen name="q3_radiobutton_paddingBottom">30dp</dimen>
+
+    <!--Question 4 ScrollView Portrait Mode  -->
+    <dimen name="q4_scrollview_portrait_marginBottom">30dp</dimen>
+
+    <!--Question 4 LinearLayout Mode  -->
+    <dimen name="q4_linearlayout_paddingBottom">30dp</dimen>
+    <dimen name="q4_linearlayout_elevation">5dp</dimen>
+
+    <!--Question 4 TextViews Mode  -->
+    <dimen name="q4_textview_preblank_paddingRightEnd">3dp</dimen>
+    <dimen name="q4_textview_preblank_paddingLeftStart">15dp</dimen>
+    <dimen name="q4_textview_postblank_paddingLeftStart">5dp</dimen>
+
+    <!--Question 4 EditText Mode  -->
+    <dimen name="q4_edittext_paddingBottom">15dp</dimen>
+    <dimen name="q4_edittext_paddingTop">15dp</dimen>
+    <dimen name="q4_edittext_paddingLeft">4dp</dimen>
+    <dimen name="q4_edittext_paddingRight">4dp</dimen>
+
+    <!--Question 4 Submit Button Mode  -->
+    <dimen name="q4_submit_btn_marginTop">10dp</dimen>
+    <dimen name="q4_submit_btn_padding">10dp</dimen>
+
+    <!--Results Screen 5 ScrollView Mode  -->
+    <dimen name="results_scrollview_marginBottom">10dp</dimen>
+
+    <!--Results Screen 5 LinearLayout Mode  -->
+    <dimen name="results_linearlayout_paddingBottom">0dp</dimen>
+
+    <!--Results Screen 5 Boy Image Mode  -->
+    <dimen name="results_boy_image_portrait_height">0dp</dimen>
+    <dimen name="results_boy_image_layout_weight">1</dimen>
+
+    <!--Results Screen Submit Button Mode  -->
+    <dimen name="results_submit_btn_marginTop">5dp</dimen>
+    <dimen name="results_submit_btn_marginBottom">5dp</dimen>
+    <dimen name="results_submit_btn_height">48dp</dimen>
+    <dimen name="results_submit_btn_padding">10dp</dimen>
+    <dimen name="results_submit_btn_text">18sp</dimen>
+
+    <!--Teacher Image Mode  -->
+    <dimen name="teacher_elevation">10dp</dimen>
+    <dimen name="teacher_padding">0dp</dimen>
+</resources>
